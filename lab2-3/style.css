@@ -70,7 +70,19 @@ article p{
     padding: 15px;
 }
 
+#content{
+    min-height: calc(100vh - 115px);
+}
 footer{
     display: flex;
     flex-direction: column;
+    height: 100px;
+    background-color: #ccc;
+    border-top: solid 2px #000;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+footer>p:nth-of-type(2){
+    font-weight: bold;
 }
