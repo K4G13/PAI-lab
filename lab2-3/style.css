@@ -44,6 +44,15 @@ a{
 
 main{
     display: flex;
+    padding: 15px;
+}
+article{
+    margin: 15px;
+    width: 100%;
+    border: solid 2px #000;
+}
+article h1{
+
 }
 
 footer{
