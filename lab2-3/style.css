@@ -71,7 +71,8 @@ article p{
 }
 
 #content{
-    min-height: calc(100vh - 115px);
+    /*               footer: height  margin-top */
+    min-height: calc(100vh - 100px - 15px);
 }
 footer{
     display: flex;
@@ -85,4 +86,33 @@ footer{
 }
 footer>p:nth-of-type(2){
     font-weight: bold;
+}
+
+#hamburger{
+    height: 75px;
+    width: 75px;
+    background-color: #ccc;
+    border: solid 2px #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    display: none;
+}
+#hamburger>div{
+    height: 2px;
+    width: 45px;
+    background-color: #000;
+}
+@media all and (max-width: 900px){
+    main {
+        flex-wrap: wrap;
+    }
+    header>h1,header>nav{display: none;}
+    #hamburger{display: flex;}
+    header{
+        justify-content: space-between;
+    }
 }
