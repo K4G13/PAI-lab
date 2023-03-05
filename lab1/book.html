@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>tutaj tytuł książki i nazwisko autora </title>
+    <meta name="author" content="Jan Kowalski">
+    <meta name="description" content="aplikacje internetowe, ćwiczenie, html">
+    <meta name="robots" content="index, nofollow">
+    <meta charset="utf-8">
+
+    <style>
+        * { font-family: Tahoma }
+        body { margin: 5em 10em 5em 10em }
+        p { text-align: justify }
+        h1 { color: rgb(255, 200, 0) /*!important*/; } /* deklaracja stylu h1 zostanie zasłoniona deklaracją z załączonego pliku style.css jeżeli nie użyjemy !important */
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="style.css" title="Arkusz stylów CSS">
+
+</head>
+<body>
+    <h1 style="color: crimson">Quo Vadis</h1>
+    <!-- tytuł zostanie pokolorowany na czerwono -->
+    <h2>Sienkiewicz Henryk</h2>
+    <table>
+        <tr>
+        <td>
+            <img src="okladka.jpg" alt="zdjęcie okładki">
+        </td>
+        <td>
+        <ul>
+            <li><b>wydawnictwo</b>: tutaj <u>Wydawnictwo GREG</u>
+            <li><b>liczba stron</b>: 460
+            <li><b>okładka</b>: twarda
+            <li><b>cena</b>: <span id="cena">17,41 zł</span>
+        </ul>
+        </td>
+        </tr>
+        <tr>
+            <td colspan="2">Opis książki
+                <p class="wstęp">Wydanie Quo vadis kompletne bez skrótów i cięć w treści. </p>
+                <p>W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - pewniak na teście , czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach.</p>
+                <p>Książka zawiera pełen tekst lektury. Na końcu książki zamieszczono opracowanie, w którym znajduje się bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. </p>
+                <p>Opracowanie zawiera ponadto plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
