@@ -67,12 +67,13 @@ async function main(){
     }        
     process.stdout.write("\n")
 
-    result.sort((a,b) =>  a.unitPrice - b.unitPrice )
+    result.sort((a,b) => a.unitPrice - b.unitPrice )
 
-    console.log(  "ID".padEnd(5," ") + "NAME".padEnd(80," ") + "UNIT-PRICE"  )
+    console.log(  "ID".padEnd(5," ") + "NAME".padEnd(80," ") + "PRICE".padEnd(14," ") + "UNIT-PRICE"  )
     for( const el of result ){
         process.stdout.write(  (Array.from(result).indexOf(el)+1+". ").padEnd(5," ")  )
         process.stdout.write(  el.fullName.padEnd(80," ")  )
+        process.stdout.write(  (el.price+" PLN").padEnd(14," ")  )
         process.stdout.write(  Math.round(el.unitPrice*10**5)/10**5+" PLN\n"  )
     }
     console.log(  lc.G + "UNITPRICE = PRICE / (CAPACITY*AGE*10)" + lc.N  )
