@@ -76,6 +76,6 @@ async function main(){
         process.stdout.write(  (el.price+" PLN").padEnd(14," ")  )
         process.stdout.write(  Math.round(el.unitPrice*10**5)/10**5+" PLN\n"  )
     }
-    console.log(  lc.G + "UNITPRICE = PRICE / (CAPACITY*AGE*10)" + lc.N  )
+    console.log(  lc.G + "UNITPRICE = PRICE / (CAPACITY * AGE * 10)" + lc.N  )
 }
 main()
