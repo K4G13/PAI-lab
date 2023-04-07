@@ -4,3 +4,4 @@
 ### lab4+: node.js web crowler
 ### lab5: jQuery
 ### lab6: php
+### lab7: php + MySql
