@@ -3,3 +3,4 @@
 ### lab4: JavaScript exercise
 ### lab4+: node.js web crowler
 ### lab5: jQuery
+### lab6: php
