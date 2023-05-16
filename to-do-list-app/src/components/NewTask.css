@@ -1,0 +1,5 @@
+.NewTask{
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+}

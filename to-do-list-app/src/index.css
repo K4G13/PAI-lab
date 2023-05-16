@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: #222;
+    color: #fff; */
+    font-family: 'Montserrat';
+}
+
+div#root{
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    height: 1em;
+    width: 1em;
+    border: solid 0.1em #777;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: background 300ms;
+}
+input[type="checkbox"]:checked{
+    background-color: #dddddd;
+}
+input[type="checkbox"]:checked::before{
+    content: '';
+    position: absolute;
+    height: inherit;
+    width: inherit;
+
+    --svg: url(assets/checkmark.svg);
+    background: var(--svg);
+    background-size: contain;
+    transform: translate(-6%,-4%) scale(0.9);
+}

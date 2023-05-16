@@ -1,0 +1,9 @@
+.ToDoList{
+    list-style-type: none;
+    display: grid;
+    place-content: center;
+}
+
+.ToDoList > li:has(input:checked){
+    text-decoration: line-through;
+}

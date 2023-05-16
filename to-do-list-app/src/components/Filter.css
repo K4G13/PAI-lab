@@ -1,0 +1,5 @@
+.Filter{
+    list-style-type: none;
+    display: grid;
+    place-content: center;
+}
